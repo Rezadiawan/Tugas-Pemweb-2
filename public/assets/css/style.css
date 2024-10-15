@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+
+
+body {
+    font-family: "Amiri", serif;
+    font-weight: 400;
+    font-style: normal;
+    /* background-color: #f2f4f8; */
+}
+
+/*
+.navbar-collapse {
+    background: linear-gradient(90deg, #46074E 0%, #197BD0 80%);
+    color: #fff;
+    padding: 10px 20px;
+    Atur padding agar terlihat rapi
+
+} */
+
+.custom-navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background: linear-gradient(90deg, #46074E 0%, #197BD0 80%);
+    color: white;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    font-size: 30px;
+}
+
+.collapse {
+    margin-left: 25px;
+}
+
+.nav-item .nav-link {
+    color: #FFFFFF !important;
+    font-size: 15px;
+    margin-left: 3px;
+    margin-right: 3px;
+
+
+}
+
+/* Styling untuk background navbar burger pada mobile saat collapse terbuka */
+.navbar-collapse.show {
+    background: linear-gradient(90deg, #46074E 0%, #197BD0 80%);
+    padding: 10px 20px;
+    /* Menambahkan padding agar terlihat rapi */
+}
+
+/* Styling tambahan untuk tombol burger saat collapse terbuka */
+.navbar-toggler:focus,
+.navbar-toggler[aria-expanded="true"] {
+    background-color: transparent;
+}
+
+
+.custom-border {
+    background-color: #003366;
+    border: 2px solid transparent;
+    /* Border default transparan */
+    transition: background-color 0.5s ease, border-color 0.5s ease, color 0.5s ease;
+}
+
+.custom-border:hover {
+    background-color: #FFFFFF;
+    /* Mengubah warna background saat hover */
+    border-color: purple !important;
+    /* Mengubah warna border menjadi ungu saat hover */
+}
+
+.custom-border:hover .nav-link {
+    color: black;
+    /* Ubah warna teks menjadi hitam saat hover */
+}
+
+
+
+.nav-link {
+    transition: color 0.5s ease;
+    /* Tambahkan transisi untuk warna teks */
+}
+
+.nav-link:hover {
+    color: black !important;
+}
+
+
+/* style.css */
+.about {
+    background-image: url("../img/IMG1.jpg");
+    /* Path gambar */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* Agar gambar memenuhi seluruh area */
+    height: 615px;
+    position: relative;
+
+}
+
+.container h1 {
+    font-size: 3rem;
+    /* Ukuran font */
+    color: #FFFFFF;
+    /* Warna teks */
+    height: 90vh;
+    /* Membuat tinggi bagian ini 100% dari viewport */
+    display: flex;
+    align-items: center;
+    /* Vertikal center */
+    justify-content: flex-start;
+    /* Mulai dari kiri */
+    padding-left: 9%;
+    /* Jarak dari sebelah kiri */
+
+}
+
+.content-box {
+    max-width: 1100px;
+    /* Atur sesuai panjang maksimal yang diinginkan */
+    width: 100%;
+    /* Untuk menjaga responsivitas */
+    overflow: hidden;
+    /* Atur sesuai kebutuhan */
+    margin-top: 50px;
+}
+
+.col {
+    margin-top: 20px;
+}
+
+.img {
+    width: 400px;
+    height: 200px;
+    /* margin-left: 50px; */
+}
+
+.layanan {
+    border-color: purple !important;
+    width: 150px;
+}
+
+.custom-hr {
+    width: 1140px;
+    /* Lebar garis */
+    height: 2px;
+    /* Bobot garis */
+    background-color: black;
+    /* Warna garis */
+    border: none;
+    /* Hilangkan border default */
+    margin: 0 auto;
+    /* Posisi tengah (horizontal centering) */
+
+}
+
+.rectangle {
+    width: 145px;
+    height: 40px;
+    background: linear-gradient(80deg, #46074E, #197BD0);
+    font-size: 15px;
+}
+
+.pesan {
+    width: 145px;
+    height: 40px;
+    background-color: #FFFFFF;
+    font-size: 15px;
+    border-color: purple !important;
+
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    left: 0;
+    background: linear-gradient(80deg, #46074E, #197BD0);
+    display: flex;
+
+    margin-top: 150px;
+}
+
+.footer p {
+    margin-top: 20px;
+}
