@@ -15,10 +15,24 @@ use App\Models\User; // Import model User
 */
 
 Route::get('/', function () {
-    return view('welcome',);
-});
+    return view('home',);
+})->name('home');
+
+
+Route::get('/tentangKami', function () {
+    return view('tentangKami',);
+})->name('tentangKami');
+
+Route::get('/artikel', function () {
+    return view('artikel',);
+})->name('artikel');
 
 
 Route::get('/testdb', function () {
     return view('testdb', ['users' => User::all()]);
 });
+
+
+Route::get('/test', function () {
+    return view('test',);
+})->name('test');
